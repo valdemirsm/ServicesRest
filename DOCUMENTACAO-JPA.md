@@ -8,4 +8,6 @@
 
 #5 - Para testar podemos usar a classe implementada CadastroCarroMain.java
 
+#6 - Por padrão o hibernate não cria FK automaticamente, para criar tem que adicionar o dialeto no application.properties, de acordo com banco de dados.
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL57Dialect
 PAREI NA PROXIMA 3.15

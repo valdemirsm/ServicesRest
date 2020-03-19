@@ -4,21 +4,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tb_carro")
-public class Carro {
+@Table(name = "tb_modelo")
+public class Modelo {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
-	@ManyToOne
-	@JoinColumn(name = "modelo_id", nullable = false)
-	private Modelo modelo;
 
 	public Long getId() {
 		return id;
@@ -36,14 +31,6 @@ public class Carro {
 		this.nome = nome;
 	}
 
-	public Modelo getModelo() {
-		return modelo;
-	}
-
-	public void setModelo(Modelo modelo) {
-		this.modelo = modelo;
-	}
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -56,9 +43,9 @@ public class Carro {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (!(obj instanceof Carro))
+		if (!(obj instanceof Modelo))
 			return false;
-		Carro other = (Carro) obj;
+		Modelo other = (Modelo) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
