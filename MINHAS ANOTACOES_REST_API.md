@@ -1,4 +1,4 @@
-#Para criar o primeiro serviça basta usar três anotações.
+#Para criar o primeiro serviço basta usar três anotações.
 @RestController - colocar na classe
 @RequestMapping("/teste") - colocar na classe, define o nome do recurso
 @GetMapping coloca no método, define o método de busca do recurso.

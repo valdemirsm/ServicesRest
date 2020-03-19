@@ -1,4 +1,4 @@
-﻿#1 - Para começa a utilizar JPA temos que adicionar o spring-boot-starter-data-jpa e o driver mysql mysql-connector-java no pom.xml. Adicionar a string de conexão no arquivo application.properties.
+﻿#1 - Para começa a utilizar JPA temos que adicionar o spring-boot-starter-data-jpa e o driver mysql mysql-connector-java no pom.xml. Adicionar a string de conexão mysql-connector-java no arquivo application.properties.
 
 #2 - Geramos o mapeamento das entidades
 

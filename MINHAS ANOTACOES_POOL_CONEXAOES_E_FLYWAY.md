@@ -9,7 +9,7 @@ spring.datasource.hikari.minimum-idle=3.
 spring.datasource.hikari.idle-timeout=10000
 
 --------------------------
-#Flyway é uma feramenta de gerenciamento de banco de dados, para utilizar precisa adicionar a seguinte
+#Flyway é uma feramenta de versionamento de banco de dados, para utilizar precisa adicionar a seguinte
 dependencia.
 <dependency>
 	<groupId>org.flywaydb</groupId>
@@ -21,7 +21,7 @@ Dentro do repositorio podemos adicionar nossos arquivos de script, os arquivos d
 V001_criacao-inicial.sql
 V002_adicionando-campos.sql
 
-#Podemos criar arquivo callback, ou seja, depois que todas todos os arquivos de migração, roda esse arquivo.
+#Podemos criar arquivo callback, ou seja, depois que todos os arquivos de migração, roda esse arquivo.
 Para isso no mesmo repositorio de versionamento devo criar o arquivo afterMigrate.sql
 
 #Em agumas situações só queremos executar o arquivo afterMigrate.sql em ambiente de dev, para isso, podemos adicionar no
