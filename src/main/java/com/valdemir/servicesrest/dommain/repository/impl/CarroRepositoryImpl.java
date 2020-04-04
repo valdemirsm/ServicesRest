@@ -1,4 +1,4 @@
-package com.valdemir.ServicesRest.dommain.repository.impl;
+package com.valdemir.servicesrest.dommain.repository.impl;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.valdemir.ServicesRest.dommain.model.Carro;
-import com.valdemir.ServicesRest.dommain.repository.CarroRepository;
+import com.valdemir.servicesrest.dommain.model.Carro;
+import com.valdemir.servicesrest.dommain.repository.CarroRepository;
 
 @Component
 public class CarroRepositoryImpl implements CarroRepository {

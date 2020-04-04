@@ -56,7 +56,7 @@ ResponseEntity<Cliente> testando()
 #Adiciona um novo recurso.
 @PostMapping
 public ResponseEntity<Cliente> adicionar(@RequestBody Cliente cliente) {
-	return ResponseEntity.status(HttpStatus.CREATED).body(cliente);
+	return ResponseEntity.status(HttpStatus.CREATED).body(cliente); // retorna status 201
 }
 
 -------------------------------
@@ -66,7 +66,7 @@ public ResponseEntity<Cliente> atualizar(@PathVariable Long id, @RequestBody Cli
 	Cliente clienteAtual = new Cliente();
 	clienteAtual.setId(id);
 	BeanUtils.copyProperties(cliente, clienteAtual, "id"); // atualiza clienteAtual e ignora o campo id
-	return ResponseEntity.status(HttpStatus.OK).body(clienteAtual);
+	return ResponseEntity.status(HttpStatus.OK).body(clienteAtual); // retorna status 200
 }
 
 ------------
@@ -74,13 +74,6 @@ public ResponseEntity<Cliente> atualizar(@PathVariable Long id, @RequestBody Cli
 @DeleteMapping("/{id}")
 public ResponseEntity<Cliente> remover(@PathVariable Long id) {
 	return ResponseEntity.status(HttpStatus.NO_CONTENT).build();// retorna status 204
-}
-
----------
-#Incluindo registro.
-@PostMapping
-public ResponseEntity<Cliente> adicionar(@RequestBody Cliente cliente) {
-	return ResponseEntity.status(HttpStatus.CREATED).body(cliente);
 }
 	
 ---------------

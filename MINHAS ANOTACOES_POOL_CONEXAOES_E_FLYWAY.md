@@ -21,7 +21,7 @@ Dentro do repositorio podemos adicionar nossos arquivos de script, os arquivos d
 V001_criacao-inicial.sql
 V002_adicionando-campos.sql
 
-#Podemos criar arquivo callback, ou seja, depois que todos os arquivos de migração, roda esse arquivo.
+#Podemos criar arquivo callback, ou seja, depois que todos os arquivos de migração rodarem, roda esse arquivo.
 Para isso no mesmo repositorio de versionamento devo criar o arquivo afterMigrate.sql
 
 #Em agumas situações só queremos executar o arquivo afterMigrate.sql em ambiente de dev, para isso, podemos adicionar no
