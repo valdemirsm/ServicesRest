@@ -1,4 +1,4 @@
-package com.valdemir.servicesrest.dommain.model;
+package com.valdemir.ServicesRest.dommain.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

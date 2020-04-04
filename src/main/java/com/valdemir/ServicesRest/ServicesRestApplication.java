@@ -1,4 +1,4 @@
-package com.valdemir.servicesrest;
+package com.valdemir.ServicesRest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

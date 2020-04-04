@@ -1,4 +1,4 @@
-package com.valdemir.servicesrest.testajpa;
+package com.valdemir.ServicesRest.testajpa;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import com.valdemir.servicesrest.ServicesRestApplication;
-import com.valdemir.servicesrest.dommain.model.Carro;
-import com.valdemir.servicesrest.dommain.repository.CarroRepository;
+import com.valdemir.ServicesRest.ServicesRestApplication;
+import com.valdemir.ServicesRest.dommain.model.Carro;
+import com.valdemir.ServicesRest.dommain.repository.CarroRepository;
 
 public class CadastroCarroMain {
 	

@@ -1,10 +1,10 @@
-package com.valdemir.servicesrest.dommain.repository;
+package com.valdemir.ServicesRest.dommain.repository;
 
 import java.util.List;
 
-import com.valdemir.servicesrest.dommain.model.Carro;
+import com.valdemir.ServicesRest.dommain.model.Carro;
 
 public interface CarroRepository {
-	List<Carro> Listar();
-	Carro salvar(Carro carro);
+	public List<Carro> Listar();
+	public Carro salvar(Carro carro);
 }
