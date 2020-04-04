@@ -16,7 +16,7 @@ public class CadastroCarroMain {
 		ConfigurableApplicationContext applicationContext = new SpringApplicationBuilder(ServicesRestApplication.class).web(WebApplicationType.NONE).run(args);
 		CarroRepository cadastroCarro = applicationContext.getBean(CarroRepository.class);
 		
-		List<Carro> lista = cadastroCarro.Listar();
+		List<Carro> lista = cadastroCarro.findAll();
 		for (Carro carro : lista) {
 			System.out.println(carro.getNome());
 		}
