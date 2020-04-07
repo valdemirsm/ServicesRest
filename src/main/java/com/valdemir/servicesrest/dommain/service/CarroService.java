@@ -20,4 +20,8 @@ public class CarroService {
 		return carroRepository.findAll();
 	}
 
+	public void deletar(Long idCarro) {
+		carroRepository.deleteById(idCarro);
+	}
+
 }
